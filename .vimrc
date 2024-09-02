@@ -28,13 +28,7 @@ noremap m9 9gt
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#begin()
 
-Bundle 'scrooloose/nerdtree' 
-Bundle 'ctrlpvim/ctrlp.vim'
-
-call vundle#end()            " required
 filetype plugin indent on    " required"")"'')""
 
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
